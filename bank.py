@@ -64,7 +64,7 @@ class BanksamoroSystem:
 
     def account_menu(self, account):
         while True:
-            print("\n=== Account Menu ===")
+            print("\n******** Account Menu ********")
             print("1. Add Money")
             print("2. View Account")
             print("3. Check Out Money")
@@ -109,9 +109,9 @@ if __name__ == "__main__":
     bank = BanksamoroSystem()
 
     while True:
-        print("\n=== Welcome to Banksamoro ===")
-        print("1. Create Account for Newbie")
-        print("2. Log In for Old User")
+        print("\n******** Welcome to Banksamoro ********")
+        print("1. Create Account ")
+        print("2. Log ")
         print("3. Exit")
 
         choice = input("Choose an option: ")
