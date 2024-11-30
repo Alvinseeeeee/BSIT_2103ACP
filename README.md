@@ -1,7 +1,4 @@
-# BSIT_2103ACP >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/Alvinseeeeee/BSIT_2103ACP.git
-git push -u origin main
+# Bank System
+#### Video Demo: <https://youtu.be/pd4KAqcMtHg>
+#### Description: 
+This is our Python-based simulation of banking system code. It is a model to simulate real-world bank operations, with users able to create accounts, log in securely, and perform several transactions, including deposits, withdrawals, and balance inquiries. The program uses some of the essential security features, including password and signature verification, to prevent unauthorized access and ensure transaction authenticity. Each account has a very detailed transaction history that records all financial activities, thus ensuring users have transparency and accountability. The system is based on object-oriented programming principles where there is a BankAccount class managing individual account details and operations and a BanksamoroSystem class that oversees account creation, login, and overall user interactions. 
