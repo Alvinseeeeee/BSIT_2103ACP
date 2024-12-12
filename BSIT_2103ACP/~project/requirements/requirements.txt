@@ -1,0 +1,109 @@
+<<<<<<< HEAD
+banksamoro/
+├── banksamoro/
+│   ├── __init__.py
+│   ├── main.py
+│   ├── bank_account.py
+├── README.md
+└── requirements.txt
+
+import datetime
+
+
+class BankAccount:
+    def __init__(self, full_name, age, address, initial_deposit, signatures, password):
+        self.full_name = full_name
+        self.age = age
+        self.address = address
+        self.balance = initial_deposit
+        self.signatures = signatures
+        self.password = password
+        self.account_number = f"BANKSAMORO-{id(self)}"
+        self.transaction_history = []
+        self.record_transaction("Initial Deposit", initial_deposit)
+
+    def verify_password(self, password):
+        return self.password == password
+
+    def verify_signatures(self, signatures):
+        return self.signatures == signatures
+
+    def record_transaction(self, transaction_type, amount):
+        self.transaction_history.append({
+            "date": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            "type": transaction_type,
+            "amount": amount,
+            "balance": self.balance
+        })
+
+    def display_account_details(self):
+        # Display account details and transaction history.
+        pass
+
+    def deposit(self, amount):
+        # Deposit money logic.
+        pass
+
+    def withdraw(self, amount):
+        # Withdraw money logic.
+        pass
+
+    def play_color_game(self):
+        # Color game logic.
+        pass
+
+=======
+banksamoro/
+├── banksamoro/
+│   ├── __init__.py
+│   ├── main.py
+│   ├── bank_account.py
+├── README.md
+└── requirements.txt
+
+import datetime
+
+
+class BankAccount:
+    def __init__(self, full_name, age, address, initial_deposit, signatures, password):
+        self.full_name = full_name
+        self.age = age
+        self.address = address
+        self.balance = initial_deposit
+        self.signatures = signatures
+        self.password = password
+        self.account_number = f"BANKSAMORO-{id(self)}"
+        self.transaction_history = []
+        self.record_transaction("Initial Deposit", initial_deposit)
+
+    def verify_password(self, password):
+        return self.password == password
+
+    def verify_signatures(self, signatures):
+        return self.signatures == signatures
+
+    def record_transaction(self, transaction_type, amount):
+        self.transaction_history.append({
+            "date": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            "type": transaction_type,
+            "amount": amount,
+            "balance": self.balance
+        })
+
+    def display_account_details(self):
+        # Display account details and transaction history.
+        pass
+
+    def deposit(self, amount):
+        # Deposit money logic.
+        pass
+
+    def withdraw(self, amount):
+        # Withdraw money logic.
+        pass
+
+    def play_color_game(self):
+        # Color game logic.
+        pass
+
+>>>>>>> origin/main
